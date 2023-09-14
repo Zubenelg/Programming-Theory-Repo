@@ -40,7 +40,7 @@ public abstract class Shape : MonoBehaviour
         SetColor();
     }
 
-    private void OnMouseDown()
+    protected virtual void OnMouseDown()
     {
         DisplayText();
     }
