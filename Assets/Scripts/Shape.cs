@@ -30,12 +30,12 @@ public abstract class Shape : MonoBehaviour
         private set { m_Renderer = value; }
     }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         Renderer = GetComponent<Renderer>();
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         SetColor();
     }
