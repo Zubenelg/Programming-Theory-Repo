@@ -13,6 +13,6 @@ public class Cube : Shape
 
     protected override void DisplayText()
     {
-        Debug.Log($"This is a {ShapeName}");
+        Debug.Log($"This is a Cube named {ShapeName}");
     }
 }
