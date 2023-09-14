@@ -12,6 +12,6 @@ public class Sphere : Shape
 
     protected override void DisplayText()
     {
-        Debug.Log($"This is a {ShapeName}");
+        Debug.Log($"This is a Sphere named {ShapeName}");
     }
 }
