@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cylinder : Shape
+public class Cylinder : Shape // INHERITANCE
 {
     public Cylinder(string name, Color color)
     {
@@ -10,7 +10,7 @@ public class Cylinder : Shape
         Color = color;
     }
 
-    protected override void DisplayText()
+    protected override void DisplayText() // POLYMORPHISM
     {
         var text = $"This is a Cylinder named {ShapeName}";
         InfoText.text = text ;
