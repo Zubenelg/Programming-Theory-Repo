@@ -12,6 +12,7 @@ public class Cylinder : Shape
 
     protected override void DisplayText()
     {
-        Debug.Log($"This is a Cylinder named {ShapeName}");
+        var text = $"This is a Cylinder named {ShapeName}";
+        InfoText.text = text ;
     }
 }

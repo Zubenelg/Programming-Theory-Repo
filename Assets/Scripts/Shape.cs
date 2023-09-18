@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshRenderer))]
@@ -9,6 +10,8 @@ public abstract class Shape : MonoBehaviour
     private string m_ShapeName;
     [SerializeField]
     private Color m_Color;
+    [SerializeField]
+    private TMP_Text m_InfoText;
 
     private Renderer m_Renderer;
 
@@ -22,6 +25,12 @@ public abstract class Shape : MonoBehaviour
     {
         get { return m_Color; }
         protected set { m_Color = value; }
+    }
+
+    public TMP_Text InfoText
+    {
+        get { return m_InfoText; }
+        protected set { m_InfoText = value; }
     }
 
     public Renderer Renderer
@@ -50,6 +59,7 @@ public abstract class Shape : MonoBehaviour
 
     public virtual void SetColor(Color color)
     {
+        Color = color;
         Renderer.material.color = color;
     }
 }

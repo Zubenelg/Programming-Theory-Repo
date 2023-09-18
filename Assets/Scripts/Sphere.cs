@@ -12,6 +12,7 @@ public class Sphere : Shape
 
     protected override void DisplayText()
     {
-        Debug.Log($"This is a Sphere named {ShapeName}");
+        var text = $"This is a Sphere named {ShapeName}";
+        InfoText.text = text;
     }
 }
